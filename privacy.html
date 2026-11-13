@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Конфиденциальность — Silk</title>
+<meta name="description" content="Какие данные хранит Silk, кто их видит и как их удалить.">
+<meta property="og:title" content="Конфиденциальность — Silk">
+<meta property="og:description" content="Какие данные хранит Silk, кто их видит и как их удалить.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://xxxilusha.github.io/silk/assets/shots/wave.webp">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><clipPath id="lt"><circle cx="12" cy="12" r="12"/></clipPath></defs><circle cx="12" cy="12" r="12" fill="#f4f4f1"/><g clip-path="url(#lt)" fill="#0e0e10"><path d="M-1 7C7 -.5 15 10.500 25 3L25 5.300C15 12.800 7 1.800 -1 9.300Z"/><path d="M-1 12.850C7 5.350 15 16.350 25 8.850L25 11.150C15 18.650 7 7.650 -1 15.150Z"/><path d="M-1 18.700C7 11.200 15 22.200 25 14.700L25 17C15 24.500 7 13.500 -1 21Z"/></g></svg>Silk</a>
+  <nav><a href="index.html#features">Возможности</a><a href="index.html#faq">Вопросы</a><a class="get" href="https://github.com/XXxilusha/silk/releases/latest/download/SilkSetup.exe">Скачать</a></nav>
+</div></header>
+<main class="doc">
+<h1>Конфиденциальность</h1>
+<p class="date">Обновлено 13 ноября 2026 года</p>
+<p class="intro">Silk работает без аккаунта, и тогда всё остаётся на твоём компьютере. Аккаунт нужен только для раздела «Друзья». Ниже по порядку: что хранится, где, кто это видит и как всё удалить.</p>
+
+<h2>Без аккаунта</h2>
+<p>Коллекция, лайки, история прослушиваний, настройки, скачанные треки и кэш обложек хранятся в папке <code>%LOCALAPPDATA%\Silk</code> на твоём компьютере. Silk никуда их не отправляет.</p>
+<p>Чтобы найти и включить музыку, Silk обращается к площадкам напрямую: YouTube, SoundCloud, Spotify, Яндекс Музыка, VK, Deezer, Audius. Тексты песен приходят из LRCLIB и Genius. Эти сервисы видят обычный запрос: что ищется или играет, и адрес твоего подключения. На них действуют их собственные правила.</p>
+<p>Если ты входишь в Яндекс Музыку или VK внутри Silk, ключ входа хранится только на твоём компьютере и уходит только в этот сервис.</p>
+<p>Статус «Слушает» в Discord передаётся через приложение Discord на твоём компьютере. Его можно выключить в настройках Silk.</p>
+
+<h2>С аккаунтом: что хранится</h2>
+<table>
+  <thead><tr><th>Что</th><th>Зачем</th><th>Кто видит</th></tr></thead>
+  <tbody>
+    <tr><td>Почта</td><td>Вход в аккаунт</td><td>Никто, кроме тебя</td></tr>
+    <tr><td>Ник, имя и аватар</td><td>Чтобы друзья нашли тебя</td><td>Все, кто вошёл в Silk</td></tr>
+    <tr><td>Друзья и заявки</td><td>Список друзей</td><td>Ты и тот, с кем дружишь</td></tr>
+    <tr><td>Что играет сейчас</td><td>Статус для друзей и «Слушать вместе»</td><td>Ты и друзья</td></tr>
+    <tr><td>Последние 100 прослушиваний</td><td>История на странице друга</td><td>Ты и друзья</td></tr>
+    <tr><td>Лайки</td><td>Любимое на странице друга</td><td>Ты и друзья</td></tr>
+    <tr><td>Совместные плейлисты</td><td>Собирать треки вместе</td><td>Только участники плейлиста</td></tr>
+  </tbody>
+</table>
+<p>Всё это лежит в базе Supabase на серверах в Европе. Доступ к данным ограничен правилами базы: чужой человек не может прочитать твоих друзей, историю или лайки. Пароль от почтового входа хранится только в виде хеша.</p>
+
+<h2>Вход через Google, GitHub и Discord</h2>
+<p>При входе через Google Silk получает только имя, адрес почты и фото профиля. Доступа к Gmail, Диску, контактам и другим данным Google у Silk нет. С GitHub и Discord так же: только имя, почта и аватар.</p>
+<p>Эти данные используются только для входа и профиля в разделе «Друзья». Silk их не продаёт, не передаёт другим и не использует для рекламы.</p>
+
+<h2>Как удалить данные</h2>
+<ul>
+  <li><b>Аккаунт целиком.</b> В Silk открой «Друзья» → «Удалить аккаунт» и подтверди. Сразу стираются почта, профиль, друзья, лайки, история и твои совместные плейлисты. Из плейлистов друзей пропадает только твоё участие, треки, которые ты туда добавил, остаются у них.</li>
+  <li><b>Данные на компьютере.</b> Удали папку <code>%LOCALAPPDATA%\Silk</code>.</li>
+  <li><b>Выйти, не удаляя.</b> «Друзья» → «Выйти».</li>
+</ul>
+
+<h2>Этот сайт</h2>
+<p>Сайт не ставит cookies и не собирает статистику. Он лежит на GitHub Pages, а установщик скачивается с GitHub. GitHub может записывать технические данные о запросах по своим правилам.</p>
+
+<h2>Вопросы</h2>
+<p>Пиши в <a href="https://github.com/XXxilusha/silk/issues">поддержку на GitHub</a>. Если правила поменяются, новая версия появится на этой странице с новой датой.</p>
+
+</main>
+<footer><div class="wrap">
+  <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><clipPath id="lb"><circle cx="12" cy="12" r="12"/></clipPath></defs><circle cx="12" cy="12" r="12" fill="#f4f4f1"/><g clip-path="url(#lb)" fill="#0e0e10"><path d="M-1 7C7 -.5 15 10.500 25 3L25 5.300C15 12.800 7 1.800 -1 9.300Z"/><path d="M-1 12.850C7 5.350 15 16.350 25 8.850L25 11.150C15 18.650 7 7.650 -1 15.150Z"/><path d="M-1 18.700C7 11.200 15 22.200 25 14.700L25 17C15 24.500 7 13.500 -1 21Z"/></g></svg>Silk</a>
+  <span>© 2026 Silk</span>
+  <nav>
+    <a href="privacy.html">Конфиденциальность</a>
+    <a href="terms.html">Условия</a>
+    <a href="https://github.com/XXxilusha/silk/issues">Поддержка</a>
+  </nav>
+</div></footer>
+</body>
+</html>
