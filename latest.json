@@ -1,8 +1,8 @@
 {
-    "version":  "1.0.0",
-    "exe":  "https://github.com/XXxilusha/silk/releases/download/v1.0.0/Silk.exe",
-    "sha256":  "631f5b3651b3c0043a553e57027b20ec19be80eb9f145020a37ff4668b42111b",
-    "size":  9064960,
-    "notes":  "Автообновление: Silk сам скачивает новые версии в фоне. Звук сам переходит на колонку или наушники, которые выбраны в Windows. Профиль как в соцсетях, вход при первом запуске, новые раскладки стилей.",
-    "setup":  "https://github.com/XXxilusha/silk/releases/download/v1.0.0/SilkSetup.exe"
+    "version":  "1.0.1",
+    "exe":  "https://github.com/XXxilusha/silk/releases/download/v1.0.1/Silk.exe",
+    "sha256":  "4a4e9098449b2257d561056075a70e057464348bff16e4f8dcd6768ddce17e0d",
+    "size":  9074688,
+    "notes":  "Вход во VK по QR-коду: телефон с приложением VK вместо кода из СМС. Подсказка, что делать, если VK пишет «Слишком много попыток».",
+    "setup":  "https://github.com/XXxilusha/silk/releases/download/v1.0.1/SilkSetup.exe"
 }
